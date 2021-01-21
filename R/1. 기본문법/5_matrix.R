@@ -1,27 +1,27 @@
-# matrix »ı¼º
+# matrix ìƒì„±
 
 var1 = matrix(c(1:5))   
 var1                    
 
-# nrow ¼Ó¼ºÀ» ÀÌ¿ëÇØ¿© ÁöÁ¤µÈ ÇàÀ» °¡Áö´Â matrix »ı¼º
-# ¿­ ±âÁØÀ¸·Î µ¥ÀÌÅÍ°¡ Ã¤¿öÁø´Ù. 
+# nrow ì†ì„±ì„ ì´ìš©í•´ì—¬ ì§€ì •ëœ í–‰ì„ ê°€ì§€ëŠ” matrix ìƒì„±
+# ì—´ ê¸°ì¤€ìœ¼ë¡œ ë°ì´í„°ê°€ ì±„ì›Œì§„ë‹¤. 
 
 var2 = matrix(c(1:10), nrow=2)
 var2                            
 
 
-# nrow ¼Ó¼º »ç¿ë½Ã ¸¸¾à Çà°ú ¿­ÀÇ ???°¡ ÀÏÄ¡ÇÏÁö ¾Ê´Â °æ¿ì
+# nrow ì†ì„± ì‚¬ìš©ì‹œ ë§Œì•½ í–‰ê³¼ ì—´ì˜ ???ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠëŠ” ê²½ìš°
 
 var3 = matrix(c(1:13), nrow=3)
 var3                          
 
-# matrix »ı¼º ½Ã Çà ¿ì¼±À¸·Î µ¥ÀÌÅÍ¸¦ »ı¼ºÇÏ´Â °æ¿ì
+# matrix ìƒì„± ì‹œ í–‰ ìš°ì„ ìœ¼ë¡œ ë°ì´í„°ë¥¼ ìƒì„±í•˜ëŠ” ê²½ìš°
 
 var4 = matrix(c(1:10), nrow=2, byrow=T)
 var4                      
 
-# vector¸¦ ´ë»óÀ¸·Î rbind()´Â Çà ¹­À½À¸·Î matrix??? »ı¼º
-# vector¸¦ ´ë»óÀ¸·Î cbind()´Â ¿­ ¹­À½À¸·Î matrix¸¦ »ı¼º
+# vectorë¥¼ ëŒ€ìƒìœ¼ë¡œ rbind()ëŠ” í–‰ ë¬¶ìŒìœ¼ë¡œ matrixë¥¼ ìƒì„±
+# vectorë¥¼ ëŒ€ìƒìœ¼ë¡œ cbind()ëŠ” ì—´ ë¬¶ìŒìœ¼ë¡œ matrixë¥¼ ìƒì„±
 
 var5 = c(1,2,3,4)
 var6 = c(5,6,7,8)
@@ -32,32 +32,32 @@ mat1
 mat2 = cbind(var5, var6)
 mat2
 
-# µ¥ÀÌÅÍ Å¸ÀÔ°ú µ¥ÀÌÅÍ ±¸Á¶ È®ÀÎ
+# ë°ì´í„° íƒ€ì…ê³¼ ë°ì´í„° êµ¬ì¡° í™•ì¸
 mode(mat1)             # numeric
 class(mat1)        ?   # matrix
 
 
-# matrix ¿¬»ê
+# matrix ì—°ì‚°
 var1 = matrix(c(1:6), ncol=3)
 var1
 
 var2 = matrix(c(1,-1,2,-2,1,-1), ncol=3)
 var2
 
-var1*var2   # elementwise product(element´ÜÀ§ÀÇ °ö¿¬»ê)
+var1*var2   # elementwise product(elementë‹¨ìœ„ì˜ ê³±ì—°ì‚°)
 
-t(var1)     # transpose matrix (ÀüÄ¡Çà·Ä)
+t(var1)     # transpose matrix (ì „ì¹˜í–‰ë ¬)
 
 var3 = matrix(c(1,-1,2,-2,1,-1), ncol=2)
 var3?
-var1 %*% var3   # matrix product (Çà·Ä°ö)
+var1 %*% var3   # matrix product (í–‰ë ¬ê³±)
 
-# ¿ªÇà·Ä : matrix A°¡ nxn matrixÀÏ ¶§, 
-# ¾Æ·¡¸¦ ¸¸Á·ÇÏ´Â nxn matrix B°¡ Á¸ÀçÇÏ¸é B¸¦ AÀÇ ¿ªÇà·ÄÀÌ¶ó ÇÑ´Ù.
-# AB = BA = I(´ÜÀ§Çà·Ä E)
-# °¡¿ì½º Á¶´ø ¼Ò°Å¹ıÀ» ÀÌ¿ëÇÏ¿© °è»ê.
+# ì—­í–‰ë ¬ : matrix Aê°€ nxn matrixì¼ ë•Œ, 
+# ì•„ë˜ë¥¼ ë§Œì¡±í•˜ëŠ” nxn matrix Bê°€ ì¡´ì¬í•˜ë©´ Bë¥¼ Aì˜ ì—­í–‰ë ¬ì´ë¼ í•œë‹¤.
+# AB = BA = I(ë‹¨ìœ„í–‰ë ¬ E)
+# ê°€ìš°ìŠ¤ ì¡°ë˜ ì†Œê±°ë²•ì„ ì´ìš©í•˜ì—¬ ê³„ì‚°.
 
 var1 = matrix(c(1,2,3,3,0,1,5,4,2), ncol?3)
 var1
 
-solve(var1)     # matrix inversion (¿ªÇà·Ä)
+solve(var1)     # matrix inversion (ì—­í–‰ë ¬)
