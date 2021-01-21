@@ -1,3 +1,3 @@
-# python-study
-jointree bigdata python study
-## jupyter Notebook 스터디 저장소 입니다.
+# python, R
+jointree bigdata python, R study
+## jupyter Notebook, R 스터디 저장소 입니다.
