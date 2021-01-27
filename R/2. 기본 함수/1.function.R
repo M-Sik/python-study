@@ -1,23 +1,23 @@
-#µ¥ÀÌÅÍ ÆÄ¾ÇÇÏ±â 
+#ë°ì´í„° íŒŒì•…í•˜ê¸° 
 library(ggplot2)
-#mgg µ¥ÀÌÅÍ¸¦ ºÒ·¯¿Í µ¥ÀÌÅÍ ÇÁ·¹ÀÓÀ» ¸¸µë.
+#mgg ë°ì´í„°ë¥¼ ë¶ˆëŸ¬ì™€ ë°ì´í„° í”„ë ˆìž„ì„ ë§Œë“¬.
 mpg <- as.data.frame(ggplot2::mpg)
 
 mpg
-class(mpg) #µ¥ÀÌÅÍÇÁ·¹ÀÓ Ãâ·Â 
+class(mpg) #ë°ì´í„°í”„ë ˆìž„ ì¶œë ¥ 
 
-ls(mpg) #ÀÚ·á±¸Á¶(¸Þ¸ð¸®±¸Á¶)¸¦ ÆÄ¾ÇÇÏ±â À§ÇÑ ÇÔ¼ö.
-head(mpg) #µ¥ÀÌÅÍÀÇ ¾ÕºÎºÐÀ» ÃßÃâÇÏ´Â ÇÔ¼ö. ±âº»°ªÀº d?ta frameÀÏ °æ¿ì ¾Õ¿¡¼­ 6Çà±îÁö ÃßÃâ.
-tail(mpg) #µ¥ÀÌÅÍÀÇ µÞºÎºÐÀ» ÃßÃâÇÏ´Â ÇÔ¼ö. ±âº»°ªÀº data frameÀÏ °æ¿ì µÚ¿¡¼­ 6Çà±îÁö ÃßÃâ.
-View(mpg) #View Ã¢¿¡¼­ µ¥ÀÌÅÍ Ãâ·Â.
-dim(mpg) #data frameÀÇ Çà°ú ¿­ÀÇ °³¼ö¸¦ ±¸ÇÏ´Â ÇÔ¼ö. ¼±Çü±¸Á¶¿¡ Àû¿ë ºÒ°¡´É.
-nrow(mpg) #dat? frameÀÇ ÇàÀÇ °³¼ö¸¦ ±¸ÇÏ´Â ÇÔ¼ö. ¼±Çü±¸Á¶¿¡ Àû¿ë ºÒ°¡´É.
-ncol(mpg) #data frameÀÇ columnÀÇ °³¼ö¸¦ ±¸ÇÏ´Â ÇÔ¼ö. ¼±Çü±¸Á¶¿¡ Àû¿ë ºÒ°¡´É.
-str(mpg) #µ¥ÀÌÅÍ¿¡ µé¾îÀÖ´Â columnµéÀÇ ¼Ó¼ºÀ» È®ÀÎÇÏ±â À§ÇÑ ÇÔ¼ö.
-ls(mpg) #data frameÀÇ column Ç×¸ñÀ» vector·Î ÃßÃâÇÏ´Â ???¼ö.
-length(mpg)    # data frameÀÎ °æ¿ì columnÀÇ °³¼ö  
-summary(mpg) # ¿ä¾à Åë°è·®À» »êÃâÇÏ´Â ÇÔ¼ö.
-rev(head(mpg)) # vectorÀÎ °æ¿ì ¿ø¼ÒÀÇ ¼ø¼­¸¦ ¿ª¼øÀ¸·Î, data frameÀÎ °æ¿ì columnÀ» ¿ª¼øÀ¸·Î
+ls(mpg) #ìžë£Œêµ¬ì¡°(ë©”ëª¨ë¦¬êµ¬ì¡°)ë¥¼ íŒŒì•…í•˜ê¸° ìœ„í•œ í•¨ìˆ˜.
+head(mpg) #ë°ì´í„°ì˜ ì•žë¶€ë¶„ì„ ì¶”ì¶œí•˜ëŠ” í•¨ìˆ˜. ê¸°ë³¸ê°’ì€ d?ta frameì¼ ê²½ìš° ì•žì—ì„œ 6í–‰ê¹Œì§€ ì¶”ì¶œ.
+tail(mpg) #ë°ì´í„°ì˜ ë’·ë¶€ë¶„ì„ ì¶”ì¶œí•˜ëŠ” í•¨ìˆ˜. ê¸°ë³¸ê°’ì€ data frameì¼ ê²½ìš° ë’¤ì—ì„œ 6í–‰ê¹Œì§€ ì¶”ì¶œ.
+View(mpg) #View ì°½ì—ì„œ ë°ì´í„° ì¶œë ¥.
+dim(mpg) #data frameì˜ í–‰ê³¼ ì—´ì˜ ê°œìˆ˜ë¥¼ êµ¬í•˜ëŠ” í•¨ìˆ˜. ì„ í˜•êµ¬ì¡°ì— ì ìš© ë¶ˆê°€ëŠ¥.
+nrow(mpg) #dat? frameì˜ í–‰ì˜ ê°œìˆ˜ë¥¼ êµ¬í•˜ëŠ” í•¨ìˆ˜. ì„ í˜•êµ¬ì¡°ì— ì ìš© ë¶ˆê°€ëŠ¥.
+ncol(mpg) #data frameì˜ columnì˜ ê°œìˆ˜ë¥¼ êµ¬í•˜ëŠ” í•¨ìˆ˜. ì„ í˜•êµ¬ì¡°ì— ì ìš© ë¶ˆê°€ëŠ¥.
+str(mpg) #ë°ì´í„°ì— ë“¤ì–´ìžˆëŠ” columnë“¤ì˜ ì†ì„±ì„ í™•ì¸í•˜ê¸° ìœ„í•œ í•¨ìˆ˜.
+ls(mpg) #data frameì˜ column í•­ëª©ì„ vectorë¡œ ì¶”ì¶œí•˜ëŠ” ???ìˆ˜.
+length(mpg)    # data frameì¸ ê²½ìš° columnì˜ ê°œìˆ˜  
+summary(mpg) # ìš”ì•½ í†µê³„ëŸ‰ì„ ì‚°ì¶œí•˜ëŠ” í•¨ìˆ˜.
+rev(head(mpg)) # vectorì¸ ê²½ìš° ì›ì†Œì˜ ìˆœì„œë¥¼ ì—­ìˆœìœ¼ë¡œ, data frameì¸ ê²½ìš° columnì„ ì—­ìˆœìœ¼ë¡œ
 
 
 
@@ -26,34 +26,34 @@ install.packages("hflights")
 library(hflights)
 
 class(hflights?   # data frame
-head(hflights)    # »óÀ§ 6Çà Ãâ·Â
-tail(hflights)    # ÇÏÀ§ 6Çà Ãâ·Â
-View(hflights)    # View Ã¢À¸·Î Ãâ·Â
-dim(hflights)     # Çà,¿­ (227496,21)     
-str(hflights)     # º¯¼öÀÇ ¼Ó¼ºÈ®ÀÎ
-summary(hflights) # ¿ä¾à Åë°è
+head(hflights)    # ìƒìœ„ 6í–‰ ì¶œë ¥
+tail(hflights)    # í•˜ìœ„ 6í–‰ ì¶œë ¥
+View(hflights)    # View ì°½ìœ¼ë¡œ ì¶œë ¥
+dim(hflights)     # í–‰,ì—´ (227496,21)     
+str(hflights)     # ë³€ìˆ˜ì˜ ì†ì„±í™•ì¸
+summary(hflights) # ìš”ì•½ í†µê³„
 
-ls(hflights)      # colum?¸íÀ» vector·Î Ãâ·Â
-nrow(hflights)    # ÇàÀÇ °³¼ö
-ncol(hflights)    # ¿­ÀÇ °³¼ö
-length(hflights)  # ¿­ÀÇ °³¼ö
-# matrix¿¡ length()¸¦ Àû¿ëÇÏ¸é ¿­ÀÇ °³¼ö°¡ ¾Æ´Ï¶ó
-# ¸ðµç ¿ø¼ÒÀÇ °³¼ö¸¦ ¸®ÅÏÇÑ´Ù.
-rev(head(hflights))             # vectorÀÎ °æ¿ì ¿ø¼ÒÀÇ ¼ø¼­¸¦ ¿ª¼ø???·Î# data frameÀÎ °æ¿ì columnÀ» ¿ª¼øÀ¸·Î
+ls(hflights)      # colum?ëª…ì„ vectorë¡œ ì¶œë ¥
+nrow(hflights)    # í–‰ì˜ ê°œìˆ˜
+ncol(hflights)    # ì—´ì˜ ê°œìˆ˜
+length(hflights)  # ì—´ì˜ ê°œìˆ˜
+# matrixì— length()ë¥¼ ì ìš©í•˜ë©´ ì—´ì˜ ê°œìˆ˜ê°€ ì•„ë‹ˆë¼
+# ëª¨ë“  ì›ì†Œì˜ ê°œìˆ˜ë¥¼ ë¦¬í„´í•œë‹¤.
+rev(head(hflights))             # vectorì¸ ê²½ìš° ì›ì†Œì˜ ìˆœì„œë¥¼ ì—­ìˆœ???ë¡œ# data frameì¸ ê²½ìš° columnì„ ì—­ìˆœìœ¼ë¡œ
 
 
 
 # iris dataset
-# Åë°èÇÐÀÚÀÎ ÇÇ¼Å(Fisher) °¡ ¼Ò°³ÇÑ µ¥ÀÌÅÍ.
-# º×²É(iris)ÀÇ 3°¡Áö Á¾(setosa, versicolor, virginica)¿¡ ´ëÇØ 
-# ²É¹ÞÄ§(sepal)°ú ²ÉÀÙ(petal)ÀÇ ±æÀÌ¸¦ Á¤¸®ÇÑ µ¥ÀÌÅÍ
+# í†µê³„í•™ìžì¸ í”¼ì…”(Fisher) ê°€ ì†Œê°œí•œ ë°ì´í„°.
+# ë¶“ê½ƒ(iris)ì˜ 3ê°€ì§€ ì¢…(setosa, versicolor, virginica)ì— ëŒ€í•´ 
+# ê½ƒë°›ì¹¨(sepal)ê³¼ ê½ƒìžŽ(petal)ì˜ ê¸¸ì´ë¥¼ ì •ë¦¬í•œ ë°ì´í„°
 
-# R¿¡ ±âº»À¸·Î ³»Àå
-# Species : º×²É??? Á¾. setosa, versicolor, virginica (Factor)
-# Sepal.Width : ²É¹ÞÄ§ÀÇ ³Êºñ (numeric)
-# Sepal.Length : ²É¹ÞÄ§ÀÇ ±æÀÌ (numeric)
-# Petal.Width : ²ÉÀÙÀÇ ³Êºñ (numeric)
-# Petal.Length : ²ÉÀÙÀÇ ±æÀÌ (numeric)
+# Rì— ê¸°ë³¸ìœ¼ë¡œ ë‚´ìž¥
+# Species : ë¶“ê½ƒì¢…ë¥˜ setosa, versicolor, virginica (Factor)
+# Sepal.Width : ê½ƒë°›ì¹¨ì˜ ë„ˆë¹„ (numeric)
+# Sepal.Length : ê½ƒë°›ì¹¨ì˜ ê¸¸ì´ (numeric)
+# Petal.Width : ê½ƒìžŽì˜ ë„ˆë¹„ (numeric)
+# Petal.Length : ê½ƒìžŽì˜ ê¸¸ì´ (numeric)
 
 head(iris)
 rev(head(iris))
